@@ -35,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
         edittext_player_name = (EditText)findViewById(R.id.edittext_player_name);
         listview_player_list = (ListView)findViewById(R.id.listview_player_list);
         List<String> player_name = new ArrayList<String>();
-
+    // sas
         ArrayAdapter<String> arrayAdapter = new ArrayAdapter<String>(this,android.R.layout.simple_list_item_1,android.R.id.text1,player_name);
         listview_player_list.setAdapter(arrayAdapter);
         button_add_player.setOnClickListener(new View.OnClickListener() {
