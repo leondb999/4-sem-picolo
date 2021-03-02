@@ -1,5 +1,6 @@
 package com.example.saufundbraus;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
@@ -34,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
         button_start_game = (Button)findViewById(R.id.button_start_game);
         edittext_player_name = (EditText)findViewById(R.id.edittext_player_name);
         listview_player_list = (ListView)findViewById(R.id.listview_player_list);
-        List<String> player_name = new ArrayList<String>();
+        ArrayList<String> player_name = new ArrayList<String>();
     // sas
         ArrayAdapter<String> arrayAdapter = new ArrayAdapter<String>(this,android.R.layout.simple_list_item_1,android.R.id.text1,player_name);
         listview_player_list.setAdapter(arrayAdapter);
@@ -46,6 +47,14 @@ public class MainActivity extends AppCompatActivity {
                 edittext_player_name.setText("");
             }
         });
-
+/*
+        button_start_game.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(MainActivity.this, GameScreen.class);
+             //   i.putStringArrayListExtra("spielerliste", player_name);
+                startActivity(i);
+            }
+        });*/
     }
 }
