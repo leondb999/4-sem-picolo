@@ -8,6 +8,7 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ListView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -33,9 +34,13 @@ public class MainActivity extends AppCompatActivity {
         button_add_player.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                player_name.add(edittext_player_name.getText().toString());
-                arrayAdapter.notifyDataSetChanged();
-                edittext_player_name.setText("");
+                if(edittext_player_name.getText().toString().length() > 0){
+                    player_name.add(edittext_player_name.getText().toString());
+                    arrayAdapter.notifyDataSetChanged();
+                    edittext_player_name.setText("");
+                } else {
+                    Toast.makeText(MainActivity.this, "Spieler name darf nicht leer sein", Toast.LENGTH_SHORT).show();
+                }
             }
         });
 
