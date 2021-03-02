@@ -6,4 +6,30 @@
     android:layout_height="match_parent"
     tools:context=".GameScreen">
 
+    <TextView
+        android:id="@+id/textFrage"
+        android:layout_width="501dp"
+        android:layout_height="923dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="120dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="40dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button_exit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="466dp"
+        android:layout_marginTop="37dp"
+        android:layout_marginEnd="131dp"
+        android:layout_marginBottom="74dp"
+        android:text="Exit"
+        app:layout_constraintBottom_toTopOf="@+id/textFrage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
