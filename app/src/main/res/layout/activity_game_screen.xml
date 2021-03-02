@@ -10,29 +10,23 @@
         android:id="@+id/textFrage"
         android:layout_width="281dp"
         android:layout_height="494dp"
-        android:layout_marginStart="60dp"
-        android:layout_marginTop="42dp"
-        android:layout_marginEnd="70dp"
-        android:layout_marginBottom="113dp"
+        android:layout_marginBottom="20dp"
         android:background="#808080"
         android:clickable="true"
         android:gravity="center"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button_exit" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/button_exit"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="161dp"
-        android:layout_marginTop="34dp"
-        android:layout_marginEnd="162dp"
-        android:layout_marginBottom="42dp"
         android:text="Exit"
+        android:visibility="visible"
         app:layout_constraintBottom_toTopOf="@+id/textFrage"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:visibility="visible" />
 </androidx.constraintlayout.widget.ConstraintLayout>
