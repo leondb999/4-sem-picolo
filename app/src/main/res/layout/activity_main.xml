@@ -32,10 +32,18 @@
                 android:layout_height="wrap_content"
                 android:text="Add Player" />
 
+            <TextView
+                android:id="@+id/textView_delete_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Halte Spieler gedrückt um zu löschen"
+                android:textColor="#000000" />
+
             <ListView
                 android:id="@+id/listview_player_list"
                 android:layout_width="match_parent"
-                android:layout_height="605dp">
+                android:layout_height="429dp">
 
             </ListView>
 
@@ -45,9 +53,15 @@
     </ScrollView>
 
     <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Button" />
+
+    <Button
         android:id="@+id/button_start_game"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:text="Saufen Go"
-        app:layout_constraintBottom_toBottomOf="parent" />
+        android:text="Saufen Go" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
