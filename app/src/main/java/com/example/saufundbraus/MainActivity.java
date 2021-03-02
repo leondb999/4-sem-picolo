@@ -50,7 +50,7 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
         });
-
+        //hi
         button_start_game.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view) {
