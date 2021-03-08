@@ -4,14 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".GameScreen">
+    tools:context=".GameScreen"
+    android:id="@+id/game_background">
 
     <TextView
         android:id="@+id/textFrage"
         android:layout_width="281dp"
         android:layout_height="494dp"
         android:layout_marginBottom="20dp"
-        android:background="#808080"
         android:clickable="true"
         android:gravity="center"
         app:layout_constraintBottom_toBottomOf="parent"

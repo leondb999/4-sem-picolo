@@ -1,8 +1,12 @@
 package com.example.saufundbraus;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.constraintlayout.widget.ConstraintLayout;
+import androidx.constraintlayout.widget.ConstraintSet;
 
+import android.graphics.Color;
 import android.os.Bundle;
+import android.text.Layout;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
@@ -19,12 +23,15 @@ public class GameScreen extends AppCompatActivity {
     TextView frage_view;
     int counter_spieler;
     int counter_random_liste;
+    ConstraintLayout cl;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_game_screen);
         exit = (Button)findViewById(R.id.button_exit);
         frage_view = (TextView)findViewById(R.id.textFrage);
+        cl = (ConstraintLayout) findViewById(R.id.game_background);
         ArrayList<String> spielerliste = (ArrayList<String>) getIntent().getStringArrayListExtra("spielerliste");
 
         counter_spieler = 0;
@@ -84,6 +91,13 @@ public class GameScreen extends AppCompatActivity {
 
                     // wenn die Random ausgesuchte liste die Liste frageliste_personen ist oder die Liste frageliste_virus ist
                     if(counter_random_liste == 3 || counter_random_liste == 2){
+
+                        if(counter_random_liste == 2){
+                            cl.setBackgroundColor(getResources().getColor(R.color.fragenliste_entscheidung));
+                        } else if (counter_random_liste == 3) {
+                            cl.setBackgroundColor(getResources().getColor(R.color.fragenliste_entscheidung));
+                        }
+
                         // wenn spielerliste durchgelaufen ist, fange von vorne an
                         if(counter_spieler == spielerliste.size()){
                             counter_spieler = 0;
@@ -94,6 +108,13 @@ public class GameScreen extends AppCompatActivity {
                         all_lists.get(counter_random_liste).remove(counter_random_frage);
                         counter_spieler++;
                     } else {
+
+                        if(counter_random_liste == 0){
+                            cl.setBackgroundColor(getResources().getColor(R.color.frageliste_virus));
+                        } else if (counter_random_liste == 1) {
+                            cl.setBackgroundColor(getResources().getColor(R.color.frageliste_personen));
+                        }
+
                         int counter_random_frage = new Random().nextInt(all_lists.get(counter_random_liste).size());
                         frage_view.setText(all_lists.get(counter_random_liste).get(counter_random_frage));
                         all_lists.get(counter_random_liste).remove(counter_random_frage);
