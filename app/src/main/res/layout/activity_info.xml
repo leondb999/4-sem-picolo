@@ -10,20 +10,29 @@
         android:id="@+id/textView_info"
         android:layout_width="369dp"
         android:layout_height="541dp"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="21dp"
+        android:layout_marginBottom="54dp"
         android:text="@string/info_text"
-        tools:layout_editor_absoluteX="21dp"
-        tools:layout_editor_absoluteY="44dp"
         android:textColor="@color/black"
-        android:textSize="17dp"/>
+        android:textSize="17dp"
+        app:layout_constraintBottom_toTopOf="@+id/button_back"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/button_back"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="161dp"
         android:layout_marginTop="51dp"
+        android:layout_marginEnd="162dp"
         android:layout_marginBottom="41dp"
         android:text="Back"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView_info"
-        tools:layout_editor_absoluteX="161dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_info" />
 </androidx.constraintlayout.widget.ConstraintLayout>
