@@ -16,19 +16,18 @@
     -->
     <string name="hello_world">Hello Square World!</string>
     <string name="title_activity_info">Info</string>
-    <string name="info_text"><b>Anleitung</b><br></br><br></br>
+    <string name="info_text"><b>Anleitung:</b>
+        <b>\n\nVirus:</b>
+        \nEin Virus löst eine Bedingung aus welche so lange beachtet werden muss, bis ein neues Virus das alte ablöst.
 
-        <b>Virus:</b><br></br>
-        Ein Virus löst eine Bedingung aus welche so lange beachtet werden muss, bis ein neues Virus das alte ablöst.<br></br><br></br>
+        <b>\n\nEntscheidung:</b>
+        \nBei dem Eintritt dieses Ereignisses, müssen die Teilnehmer einzeln entscheiden welcher Meinung sie sind. Danach wird gleichzeitig abgestimmt.
+        \nDann werden alle per Handzeichen gleichzeitig enthüllen was Ihre jeweilige Entscheidung ist. Die Minderheit muss trinken.
 
-        <b>Entscheidung:</b><br></br>
-        Bei dem Eintritt dieses Ereignisses, müssen die Teilnehmer einzeln entscheiden welcher Meinung sie sind. Danach wird gleichzeitig abgestimmt.<br></br>
-        Dann werden alle per Handzeichen gleichzeitig enthüllen was Ihre jeweilige Entscheidung ist. Die Minderheit muss trinken.<br></br><br></br>
+        <b>\n\nAllgemein:</b>
+        \nDiese Aufforderungen beziehen sich auf die Allgemeinheit.
 
-        <b>Allgemein:</b><br></br>
-        Diese Aufforderungen beziehen sich auf die Allgemeinheit.<br></br><br></br>
-
-        <b>Person:</b><br></br>
-        Dies Fragen sind Personenbezogen und von der jeweils angegebenen Person durchzuführen.
+        <b>\n\nPerson:</b>
+        \nDies Fragen sind Personenbezogen und von der jeweils angegebenen Person durchzuführen.
     </string>
 </resources>
