@@ -18,6 +18,7 @@ import java.util.Arrays;
 public class MainActivity extends AppCompatActivity {
     Button button_add_player;
     Button button_start_game;
+    Button button_info;
     EditText edittext_player_name;
     ListView listview_player_list;
     int player_minimum;
@@ -30,6 +31,7 @@ public class MainActivity extends AppCompatActivity {
         player_minimum = 2;
         button_add_player = (Button)findViewById(R.id.button_add_player);
         button_start_game = (Button)findViewById(R.id.button_start_game);
+        button_info = (Button)findViewById(R.id.button_info);
         edittext_player_name = (EditText)findViewById(R.id.edittext_player_name);
         listview_player_list = (ListView)findViewById(R.id.listview_player_list);
         //String[] empty_name = new String[0];
@@ -61,7 +63,14 @@ public class MainActivity extends AppCompatActivity {
                 } else {
                     Toast.makeText(MainActivity.this, "Es muss mindestens " + player_minimum + " Spieler mitsaufen damit ihr euch richtig die Kante geben könnt", Toast.LENGTH_SHORT).show();
                 }
-
+            }
+        });
+        // navigate to Seite Info
+        button_info.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(MainActivity.this, Info.class);
+                startActivity(i);
             }
         });
 
@@ -74,7 +83,5 @@ public class MainActivity extends AppCompatActivity {
                 return false;
             }
         });
-
-
     }
 }
