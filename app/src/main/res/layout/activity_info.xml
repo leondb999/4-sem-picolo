@@ -8,17 +8,22 @@
 
     <TextView
         android:id="@+id/textView_info"
-        android:layout_width="364dp"
-        android:layout_height="450dp"
-        android:text="TextView"
-        tools:layout_editor_absoluteX="18dp"
-        tools:layout_editor_absoluteY="128dp" />
+        android:layout_width="369dp"
+        android:layout_height="541dp"
+        android:text="@string/info_text"
+        tools:layout_editor_absoluteX="21dp"
+        tools:layout_editor_absoluteY="44dp"
+        android:textColor="@color/black"
+        android:textSize="17dp"/>
 
     <Button
         android:id="@+id/button_back"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="51dp"
+        android:layout_marginBottom="41dp"
         android:text="Back"
-        tools:layout_editor_absoluteX="35dp"
-        tools:layout_editor_absoluteY="619dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_info"
+        tools:layout_editor_absoluteX="161dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
