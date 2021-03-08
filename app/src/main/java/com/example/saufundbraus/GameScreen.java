@@ -9,6 +9,7 @@ import android.os.Bundle;
 import android.text.Layout;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -19,7 +20,7 @@ import java.util.ArrayList;
 import java.util.Random;
 
 public class GameScreen extends AppCompatActivity {
-    Button exit;
+    ImageButton exit;
     TextView frage_view;
     int counter_spieler;
     int counter_random_liste;
@@ -29,7 +30,7 @@ public class GameScreen extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_game_screen);
-        exit = (Button)findViewById(R.id.button_exit);
+        exit = (ImageButton)findViewById(R.id.button_exit);
         frage_view = (TextView)findViewById(R.id.textFrage);
         cl = (ConstraintLayout) findViewById(R.id.game_background);
         ArrayList<String> spielerliste = (ArrayList<String>) getIntent().getStringArrayListExtra("spielerliste");
