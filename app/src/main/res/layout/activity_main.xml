@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/glas_zitrone"
-    android:scaleType = "center"
+    android:background="@color/black"
+    android:scaleType="matrix"
     tools:context=".MainActivity">
 
     <TextView
@@ -15,16 +15,47 @@
         android:text="Sauf und Braus"
         android:textColor="@color/fragenliste_allgemein"
         android:textSize="24sp"
-        app:layout_constraintBottom_toTopOf="@+id/scrollView3"
+        app:layout_constraintBottom_toTopOf="@+id/linear3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linear3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/scrollView3"
+
+        android:orientation="horizontal"
+        tools:layout_editor_absoluteY="32dp"
+        tools:ignore="MissingConstraints">
+
+        <EditText
+            android:id="@+id/edittext_player_name"
+            android:layout_width="307dp"
+            android:layout_height="46dp"
+            android:hint="Player name"
+            android:textColor="@color/fragenliste_allgemein"
+            android:textColorHighlight="#FFFFFF"
+            android:textColorHint="#F1EAEA" />
+
+        <Button
+            android:id="@+id/button_add_player"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="4dp"
+            android:backgroundTint="@color/purple_500"
+            android:text="Add" />
+
+
+    </LinearLayout>
 
     <ScrollView
         android:id="@+id/scrollView3"
         android:layout_width="410dp"
         android:layout_height="591dp"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/linear3"
+
 
         tools:layout_editor_absoluteX="0dp">
 
@@ -33,31 +64,6 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
-
-                <EditText
-                    android:id="@+id/edittext_player_name"
-                    android:layout_width="307dp"
-                    android:layout_height="46dp"
-                    android:hint="Player name"
-                    android:textColor="@color/fragenliste_allgemein"
-                    android:textColorHighlight="#FFFFFF"
-                    android:textColorHint="#F1EAEA" />
-
-                <Button
-                    android:id="@+id/button_add_player"
-                    android:layout_width="100dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginEnd="4dp"
-                    android:backgroundTint="@color/purple_500"
-                    android:text="Add" />
-
-
-            </LinearLayout>
 
             <TextView
                 android:id="@+id/textView_delete_info"
@@ -70,7 +76,8 @@
             <ListView
                 android:id="@+id/listview_player_list"
                 android:layout_width="match_parent"
-                android:layout_height="600dp">
+                android:layout_height="600dp"
+                android:cacheColorHint="#FFFFFF">
 
 
             </ListView>
@@ -81,6 +88,7 @@
 
     <LinearLayout
         android:id="@+id/linearLayout"
+        app:layout_constraintTop_toBottomOf="@+id/scrollView3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"

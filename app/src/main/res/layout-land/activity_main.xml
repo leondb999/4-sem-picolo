@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/black"
     tools:context=".MainActivity">
 
     <TextView
@@ -12,6 +13,7 @@
         android:layout_height="wrap_content"
         android:gravity="center"
         android:text="Sauf und Braus"
+        android:textColor="#FFFFFF"
         android:textSize="24sp"
         app:layout_constraintBottom_toTopOf="@+id/linear1"
         app:layout_constraintEnd_toEndOf="parent"
@@ -20,26 +22,29 @@
 
     <LinearLayout
         android:id="@+id/linear1"
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
-        app:layout_constraintBottom_toTopOf="@+id/scrollView3">
+        app:layout_constraintBottom_toTopOf="@+id/scrollView3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView">
 
         <EditText
             android:id="@+id/edittext_player_name"
             android:layout_width="630dp"
-            android:layout_height="46dp" />
+            android:layout_height="46dp"
+            android:hint="Player Name"
+            android:textColor="#FFFFFF"
+            android:textColorHint="@color/fragenliste_allgemein" />
 
         <Button
             android:id="@+id/button_add_player"
             android:layout_width="98dp"
             android:layout_height="wrap_content"
             android:layout_marginEnd="4dp"
-            android:backgroundTint="@color/green"
+            android:backgroundTint="@color/purple_500"
             android:text="Add" />
-
-
 
 
     </LinearLayout>
@@ -65,12 +70,13 @@
                 android:layout_height="20dp"
                 android:gravity="center"
                 android:text="Halte Spieler gedrückt um zu löschen"
-                android:textColor="#000000" />
+                android:textColor="#FFFFFF" />
 
             <ListView
                 android:id="@+id/listview_player_list"
                 android:layout_width="match_parent"
-                android:layout_height="261dp">
+                android:layout_height="261dp"
+                android:cacheColorHint="#FFFFFF">
 
 
             </ListView>
@@ -91,14 +97,14 @@
             android:id="@+id/button_info"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:backgroundTint="@color/yellow"
+            android:backgroundTint="@color/purple_700"
             android:text="Info" />
 
         <Button
             android:id="@+id/button_start_game"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:backgroundTint="@color/blue"
+            android:backgroundTint="@color/purple_500"
             android:text="Saufen Go" />
     </LinearLayout>
 
