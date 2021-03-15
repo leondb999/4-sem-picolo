@@ -14,11 +14,16 @@
         android:theme="@style/Theme.SaufUndBraus">
 
 
-        <activity android:name=".GameScreen" />
+        <activity
+            android:name=".GameScreen"
+            android:configChanges="orientation|screenSize"
+            />
         <activity
             android:name=".MainActivity"
             android:label="@string/app_name"
-            android:theme="@style/Theme.SaufUndBraus.NoActionBar">
+            android:theme="@style/Theme.SaufUndBraus.NoActionBar"
+            android:configChanges="orientation|screenSize"
+            >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
