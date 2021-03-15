@@ -22,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
     EditText edittext_player_name;
     ListView listview_player_list;
     int player_minimum;
-
+//as
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
