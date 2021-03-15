@@ -59,14 +59,6 @@
             android:layout_height="match_parent"
             android:orientation="vertical">
 
-            <ListView
-                android:id="@+id/listview_player_list"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
-
-
-            </ListView>
-
             <TextView
                 android:id="@+id/textView_delete_info"
                 android:layout_width="260dp"
@@ -74,6 +66,14 @@
                 android:gravity="center"
                 android:text="Halte Spieler gedrückt um zu löschen"
                 android:textColor="#000000" />
+
+            <ListView
+                android:id="@+id/listview_player_list"
+                android:layout_width="match_parent"
+                android:layout_height="261dp">
+
+
+            </ListView>
 
 
         </LinearLayout>
