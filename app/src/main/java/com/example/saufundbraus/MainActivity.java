@@ -1,6 +1,7 @@
 package com.example.saufundbraus;
 
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 import androidx.appcompat.app.AppCompatActivity;
 import android.view.View;
@@ -44,6 +45,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 if(edittext_player_name.getText().toString().length() > 0){
+
                     player_name.add(edittext_player_name.getText().toString());
                     arrayAdapter.notifyDataSetChanged();
                     edittext_player_name.setText("");

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/black"
+    android:background="@color/white"
     android:scaleType="matrix"
     tools:context=".MainActivity">
 
@@ -13,7 +13,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Sauf und Braus"
-        android:textColor="@color/fragenliste_allgemein"
+        android:textColor="@color/black"
         android:textSize="24sp"
         app:layout_constraintBottom_toTopOf="@+id/linear3"
         app:layout_constraintEnd_toEndOf="parent"
@@ -24,24 +24,26 @@
         android:id="@+id/linear3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintBottom_toTopOf="@+id/scrollView3"
-
         android:orientation="horizontal"
-        tools:layout_editor_absoluteY="32dp"
+
+        app:layout_constraintBottom_toTopOf="@+id/scrollView3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
         tools:ignore="MissingConstraints">
 
         <EditText
             android:id="@+id/edittext_player_name"
-            android:layout_width="307dp"
+            android:layout_width="wrap_content"
             android:layout_height="46dp"
             android:hint="Player name"
-            android:textColor="@color/fragenliste_allgemein"
-            android:textColorHighlight="#FFFFFF"
-            android:textColorHint="#F1EAEA" />
+            android:textColor="@color/black"
+            android:textColorHighlight="@color/black"
+            android:textColorHint="@color/black" />
 
         <Button
             android:id="@+id/button_add_player"
-            android:layout_width="100dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginEnd="4dp"
             android:backgroundTint="@color/purple_500"
@@ -77,8 +79,8 @@
                 android:id="@+id/listview_player_list"
                 android:layout_width="match_parent"
                 android:layout_height="600dp"
-                android:cacheColorHint="#FFFFFF">
-
+                android:cacheColorHint="#FFFFFF"
+                >
 
             </ListView>
 
