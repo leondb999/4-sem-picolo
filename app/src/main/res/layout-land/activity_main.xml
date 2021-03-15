@@ -10,7 +10,6 @@
         android:id="@+id/textView"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="2dp"
         android:gravity="center"
         android:text="Sauf und Braus"
         android:textSize="24sp"
@@ -48,9 +47,9 @@
     <ScrollView
         android:id="@+id/scrollView3"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@+id/linear1"
-        app:layout_constraintBottom_toTopOf="@+id/linearLayout">
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintTop_toBottomOf="@+id/linear1">
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         tools:layout_editor_absoluteY="32dp">
@@ -60,14 +59,6 @@
             android:layout_height="match_parent"
             android:orientation="vertical">
 
-            <TextView
-                android:id="@+id/textView_delete_info"
-                android:layout_width="260dp"
-                android:layout_height="20dp"
-                android:gravity="center"
-                android:text="Halte Spieler gedrückt um zu löschen"
-                android:textColor="#000000" />
-
             <ListView
                 android:id="@+id/listview_player_list"
                 android:layout_width="match_parent"
@@ -76,6 +67,13 @@
 
             </ListView>
 
+            <TextView
+                android:id="@+id/textView_delete_info"
+                android:layout_width="260dp"
+                android:layout_height="20dp"
+                android:gravity="center"
+                android:text="Halte Spieler gedrückt um zu löschen"
+                android:textColor="#000000" />
 
 
         </LinearLayout>
