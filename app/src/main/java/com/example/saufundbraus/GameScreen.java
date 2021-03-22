@@ -155,9 +155,9 @@ public class GameScreen extends AppCompatActivity {
                     if(counter_random_liste == 3 || counter_random_liste == 2){
 
                         if(counter_random_liste == 2){
-                            cl.setBackgroundColor(getResources().getColor(R.color.fragenliste_entscheidung));
+                            cl.setBackgroundColor(getResources().getColor(R.color.frageliste_virus));
                         } else if (counter_random_liste == 3) {
-                            cl.setBackgroundColor(getResources().getColor(R.color.fragenliste_entscheidung));
+                            cl.setBackgroundColor(getResources().getColor(R.color.frageliste_personen));
                         }
 
                         // wenn spielerliste durchgelaufen ist, fange von vorne an
@@ -172,9 +172,9 @@ public class GameScreen extends AppCompatActivity {
                     } else {
 
                         if(counter_random_liste == 0){
-                            cl.setBackgroundColor(getResources().getColor(R.color.frageliste_virus));
+                            cl.setBackgroundColor(getResources().getColor(R.color.fragenliste_allgemein));
                         } else if (counter_random_liste == 1) {
-                            cl.setBackgroundColor(getResources().getColor(R.color.frageliste_personen));
+                            cl.setBackgroundColor(getResources().getColor(R.color.fragenliste_entscheidung));
                         }
 
                         int counter_random_frage = new Random().nextInt(all_lists.get(counter_random_liste).size());
