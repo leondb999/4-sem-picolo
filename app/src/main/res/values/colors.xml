@@ -12,6 +12,6 @@
     <color name="fragenliste_allgemein">#D3E1FC</color>
     <color name="fragenliste_entscheidung">#8DBFF0</color>
     <color name="frageliste_virus">#F2F5A9</color>
-    <color name="frageliste_personen">#E6F8E0</color>
+    <color name="frageliste_personen">#E6F8E0 </color>
     <color name="white">#FFFFFFFF</color>
 </resources>
