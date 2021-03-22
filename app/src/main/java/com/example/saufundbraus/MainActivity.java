@@ -38,7 +38,7 @@ public class MainActivity extends AppCompatActivity {
         //String[] empty_name = new String[0];
        // ArrayList<String> player_name = new ArrayList<String>(Arrays.asList(empty_name));
         ArrayList<String> player_name = new ArrayList<String>();
-    // sas
+    // sas kommentar
         ArrayAdapter<String> arrayAdapter = new ArrayAdapter<String>(this,android.R.layout.simple_list_item_1,android.R.id.text1,player_name);
         listview_player_list.setAdapter(arrayAdapter);
         button_add_player.setOnClickListener(new View.OnClickListener() {
