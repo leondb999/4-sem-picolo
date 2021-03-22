@@ -45,7 +45,6 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 if(edittext_player_name.getText().toString().length() > 0){
-
                     player_name.add(edittext_player_name.getText().toString());
                     arrayAdapter.notifyDataSetChanged();
                     edittext_player_name.setText("");
@@ -54,7 +53,7 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
         });
-        //hi ahahahahahahaha
+        //
         button_start_game.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view) {
@@ -63,7 +62,11 @@ public class MainActivity extends AppCompatActivity {
                     i.putStringArrayListExtra("spielerliste", player_name);
                     startActivity(i);
                 } else {
-                    Toast.makeText(MainActivity.this, "Es muss mindestens " + player_minimum + " Spieler mitsaufen damit ihr euch richtig die Kante geben könnt", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(
+                    MainActivity.this,
+                        "Es müssen mindestens "+ player_minimum + " Spieler mittrinken damit ihr einen lustigen Abend habt!",
+                        Toast.LENGTH_SHORT
+                    ).show();
                 }
             }
         });
